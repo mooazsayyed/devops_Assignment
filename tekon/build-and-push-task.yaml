@@ -3,6 +3,16 @@ kind: Task
 metadata:
   name: build-and-push-task
 spec:
+  params:
+    - name: context-dir
+      type: string
+      description: The build context directory
+    - name: dockerfile
+      type: string
+      description: The path to the Dockerfile
+    - name: docker-image
+      type: string
+      description: The destination Docker image
   steps:
     - name: build-and-push
       image: gcr.io/kaniko-project/executor:latest
