@@ -16,5 +16,4 @@ spec:
         #!/bin/sh
         git clone $(params.gitrepo.url) .
         ls -la
-        cd rails_docker_compose_psql-main/
         cat Dockerfile
