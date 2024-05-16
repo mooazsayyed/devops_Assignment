@@ -5,8 +5,7 @@ services:
     container_name: demo-postgres-14.2
     volumes:
       - postgres_data:/var/lib/postgresql/data
-    command: 
-      "postgres -c 'max_connections=500'"
+    command: "postgres -c 'max_connections=500'"
     environment:
       - POSTGRES_DB=${POSTGRES_DB}
       - POSTGRES_USER=${POSTGRES_USER}
