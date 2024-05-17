@@ -106,5 +106,6 @@ kubectl apply -f pipelinerun.yaml
 ```
 Creating secrets,serviceaccounts,resources for github ssh auth and docker registry
 
+Thanks
 
 
